@@ -14,8 +14,12 @@ body {
   margin-bottom: 10px;
 }
 .form-signin .checkbox {
-  font-weight: normal;
+   font-weight: normal;
+   float: right;
+   position: absolute;
+   padding-left: 310px;
 }
+
 .form-signin .form-control {
   position: relative;
   height: auto;
