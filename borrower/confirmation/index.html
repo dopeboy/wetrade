@@ -65,130 +65,33 @@
 
     </div>
   </div>
+
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+
  <div class="container">
-
-      </form>
-
-
-     <!--FORM
-         ================================================== -->
-&nbsp
-&nbsp
-     &nbsp
-     &nbsp
-     &nbsp
-     &nbsp
-
-<br/>
-
-     <br/><br/><br/><br/><br/>
-     <h2 class="form-signin-heading">SEARCH RESULTS</h2>
-     <br/>
-     <table border="0" cellpadding="5" cellspacing="5">
-<tbody><tr>
-       
-<div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#">Rating</a></li>
-      <li><a href="#">Availability</a></li>
-      <li><a href="#">Condition</a></li>
-    </ul>
+  <div class="jumbotron confirmation">
+    <h1>Thank You</h1>      
+    <p>Your request for a ladder has been received and is pending response from the lender. Thank you for using WeTrade, you will receive an email and mobile confirmation, when your item is ready for pickup.</p>
   </div>
-&nbsp
-&nbsp&nbsp
-    &nbsp
-
-</tbody><table id="example" class="display" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-                <th>Item</th>
-                <th>Condition</th>
-                <th>Location</th>
-                <th>Rating</th>
-                <th>Availability</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ladder <img src="images/yellow-ladder_small.gif" alt="a yellow ladder"></td>
-                <td>New</td>
-                <td>Oakland</td>
-                <td>5</td>
-                <td>Immediately</td>
-            </tr>
-            <tr>
-                <td>Ladder <img src="images/extension-ladder_small.jpg" alt="an extensioan ladder"></td>
-                <td>Used</td>
-                <td>Oakland</td>
-                <td>5</td>
-                <td>Tomorrow</td>
-            </tr>
-            <tr>
-                <td>Ladder <img src="images/werner-ladder_small.jpg" alt="a werner ladder"></td>
-                <td>New</td>
-                <td>Oakland</td>
-                <td>5</td>
-                <td>3 Days</td>
-            </tr>
-            <tr>
-                <td>Ladder <img src="images/wood-ladder_small.jpg" alt="a wood ladder"></td>
-                <td>New</td>
-                <td>San Francisco</td>
-                <td>5</td>
-                <td>12 Days</td>
-            </tr>
- </tbody>
-    </table>
+</div>
 
 
-      <section>
-        <h2>Map</h2>
-        <ul class="input-list style-2 clearfix align="center"">
- <div id="map" style="width: 1000px; height: 400px;"></div>
-
-  <script type="text/javascript">
-    var locations = [
-      ['Home', 37.8044444, -122.2697222],
-      ['Ladder', 37.780536, -122.279741],
-      ['Ladder', 37.804364, -122.271114],
-      ['Ladder', 37.752483, -122.198210],
-      ['Ladder', 37.872532, -122.260783],
-      ['Ladder', 37.804364, -122.271114]
-    ];
-
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 10,
-      center: new google.maps.LatLng(37.8044444, -122.2697222),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
-
-    var infowindow = new google.maps.InfoWindow();
-
-    var marker, i;
-
-    for (i = 0; i < locations.length; i++) {  
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map
-      });
-
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
-        }
-      })(marker, i));
-    }
-  </script>
-
-      </section>
-
-  <a href="../../index.html"><p style="text-align:center">Go Back</a>
-
-    </div> <!-- /container -->
-
+    
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
