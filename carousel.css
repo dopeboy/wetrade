@@ -99,20 +99,20 @@ body {
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
-    margin-top: 20px;
+    margin-top: 1px;
     background-color: #26a69a;
-    padding-bottom: 1px;
+    margin-bottom: 1px;
   }
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px;
     background-color: #26a69a;
+    margin-bottom: .5px;
   }
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
     background-color: #26a69a;
-
   }
   .form-signin input[type="thingIneed"] {
     margin-top: 10px;
