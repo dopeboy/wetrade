@@ -117,6 +117,7 @@ body {
     background-color: slategray;
     padding-top: 10px;
     float: right;
+
   }
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
