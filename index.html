@@ -20,10 +20,30 @@
 <!-- NAVBARs
 ================================================== -->
   <body>
+            <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+              </div>
+              <div class="modal-body text-center">
+                <a class="btn btn-primary" href="borrower/results/index.html" role="button">
+                Sign in with Facebook
+                </a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
     <div class="navbar-wrapper">
       <div class="container">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="navbar navbar-inverse navbar-static-top" style="border: none">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -36,10 +56,9 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav" style="margin-top: 25px">
-                <li ><a href="#about" STYLE="color: #000000">How It Works </a>
-                <li class=""><a href="./" STYLE="color: #000000">Signup<span class="sr-only">(current)</span></a></li>
-                <li><a href="../navbar-fixed-top/" STYLE="color: #000000">Login</a></li>
-
+                <li ><a href="#about" STYLE="color: #FFFBF0">How It Works </a>
+                <li class=""><a href="./" STYLE="color: #FFFBF0">Signup<span class="sr-only">(current)</span></a></li>
+                 <li><a  href="#" data-toggle="modal" STYLE="color: #FFFBF0" data-target="#myModal">Login</a></li>                
               </ul>
 
 
@@ -52,7 +71,7 @@
 
                   </form>
                 </li>
-                <li><a href="borrower/results/index.html" STYLE="color: #000000">Search</a></li>
+                <li><a href="borrower/results/index.html" STYLE="color: #FFFBF0">Search</a></li>
                 
               </ul>
 
