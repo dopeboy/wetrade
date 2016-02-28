@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Signin Template for Bootstrap</title>
+    <title>Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -31,7 +31,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   <script src="http://maps.google.com/maps/api/js?sensor=false" 
-          type="text/javascript"></script>    
+          type="text/javascript"></script>
+      <!-- Custom styles for this template -->
+      <link href="../../carousel.css" rel="stylesheet">
 </head>
 
   <body>
@@ -49,41 +51,40 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">WeTrade</a>
+              <img src="../../wetradelogo_default.png" height="100" width="150">
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
+              <li><a href="#" STYLE="color: #000000">Home</a></li>
+              <li><a href="#about" STYLE="color: #000000">About</a></li>
+              <li><a href="#contact" STYLE="color: #000000">Contact</a></li>
+
             </ul>
-            hdiv>
+            </div>
       </nav>
 
     </div>
   </div>
  <div class="container">
-   <h2 class="form-signin-heading">SEARCH RESULTS</h2>
 
       </form>
 
-  <!--FORM
-      ================================================== -->
+
+     <!--FORM
+         ================================================== -->
 &nbsp
 &nbsp
-<table border="0" cellpadding="5" cellspacing="5">
+     &nbsp
+     &nbsp
+     &nbsp
+     &nbsp
+
+<br/>
+
+     <br/><br/><br/><br/><br/>
+     <h2 class="form-signin-heading">SEARCH RESULTS</h2>
+     <br/>
+     <table border="0" cellpadding="5" cellspacing="5">
 <tbody><tr>
        
 <div class="dropdown">
@@ -96,14 +97,9 @@
     </ul>
   </div>
 &nbsp
-&nbsp
-            <td>Minimum age:</td>
-            <td><input id="min" name="min" type="text"></td>
-        </tr>
-        <tr>
-            <td>Maximum age:</td>
-            <td><input id="max" name="max" type="text"></td>
-        </tr>
+&nbsp&nbsp
+    &nbsp
+
 </tbody><table id="example" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
@@ -116,31 +112,28 @@
         </thead>
         <tbody>
             <tr>
-                <td>Ladder</td>
-                <td>MotorCycle</td>
+                <td>Ladder <img src="images/yellow-ladder_small.gif" alt="a yellow ladder"></td>
                 <td>New</td>
                 <td>Oakland</td>
                 <td>5</td>
                 <td>Immediately</td>
             </tr>
             <tr>
-                <td>Ladder</td>
+                <td>Ladder <img src="images/extension-ladder_small.jpg" alt="an extensioan ladder"></td>
                 <td>Used</td>
                 <td>Oakland</td>
                 <td>5</td>
                 <td>Immediately</td>
             </tr>
             <tr>
-                <td>Ladder</td>
-                <td>Mac Book Air</td>
+                <td>Ladder <img src="images/werner-ladder_small.jpg" alt="a werner ladder"></td>
                 <td>New</td>
                 <td>Oakland</td>
                 <td>5</td>
                 <td>3 Days</td>
             </tr>
             <tr>
-                <td>Ladder</td>
-                <td>Power Saw</td>
+                <td>Ladder <img src="images/wood-ladder_small.jpg" alt="a wood ladder"></td>
                 <td>New</td>
                 <td>San Francisco</td>
                 <td>5</td>
@@ -149,26 +142,6 @@
  </tbody>
     </table>
 
-
-</script>
-=======
-
-        <h2 class="form-signin-heading">I NEED SOMETHING</h2>
-        <label for="Needsomething" class="sr-only">The thing that I need</label>
-
-        <input type="thingIneed" id="thingIneed" class="form-control" placeholder="The thing that I need" required autofocus>
-        <label for="thingIneed" class="sr-only"></label>
-
-        <input type="thingihave" id="thingihave" class="form-control" placeholder="The thing that I have" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Get my location automatically
-          </label>
-        </div>
-
-        <input type="zipcode" id="zipcode" class="form-control" placeholder="My zip code" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Search</button>
-     </form>
 
       <section>
         <h2>Map</h2>
@@ -226,7 +199,6 @@
     <script src="filter.js"></script>
     <script src="table.js"></script>
   </body>
-=======
 
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
