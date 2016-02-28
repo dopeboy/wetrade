@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>WeTrade</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -14,57 +14,90 @@
       margin: auto;
   }
   </style>
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+
 </head>
 <body>
 
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WeTrade</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>
-  </div>
-</nav>
-
+<div class="navbar-wrapper">
   <div class="container">
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="wetradelogo_default.png" height="100" width="150">
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="#about" STYLE="color: #000000">How It Works </a>
+            <li class=""><a href="./" STYLE="color: #000000">Signup<span class="sr-only">(current)</span></a></li>
+            <li><a href="../navbar-fixed-top/" STYLE="color: #000000">Login</a></li>
+
+          </ul>
+
+
+
+          <ul class="nav navbar-nav navbar-right">
+
+            <li>
+              <form class="form-signin">
+                <input type="thingIneed" STYLE="color: #FFFFFF"  id="thingIneed" class="form-control"  required autofocus>
+
+              </form>
+            </li>
+            <li><a href="borrower/results/index.html" STYLE="color: #000000">Search</a></li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</div>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<h2>Jose WeTrader</h2>
+
+<div class="container">
     <div class="row">
       <div class="col-sm-3 col-md-3 col-xs-3 image-container">
-        <img src="images/icons/staruser.png" style="height:200px; margin-left:-15px;" />
+        <img src="images/jose.jpg" style="height:200px; margin-left:-15px;" />
       </div>
 
       <div class="col-sm-3 col-md-3 col-xs-3">
         <h3>NAME:</h3>
-        <p style="font-size:10px; color:#03225C;"> NAME </p>
+        <p style="font-size:14px">Jose Contreras </p>
         <h3>LENDER:</h3>
-        <p style="font-size:10px; color:#03225C;"> "here to help" </p>
+        <p style="font-size:14px color:#03225C;"> "here to help" </p>
         <h3>LOCATION:</h3>
-        <p style="font-size:10px; color:#03225C;"> 18 miles</p>
+        <p style="font-size:14px">18 miles</p>
       </div>
 
       <div class="col-sm-3 col-md-3 col-xs-3">  
         <h3>RATING:</h3>
-        <p style="font-size:10px; color:#03225C;"> "4.5 STARS!!" </p>
+        <p> <img src = "images/fivestars.png" height="20"> </p>
         <h3>USE LEVEL:</h3>
-        <p style="font-size:10px; color:#03225C;"> "FREQUENT" </p>
+        <p style="font-size:14px">FREQUENT</p>
         <h3>MUTUAL FRIENDS:</h3>
-        <p style="font-size:10px; color:#03225C;"> "Cindy, Chelsea, Brady" </p>
+        <p><img src = "images/mutualfriends.png" height="60" width="244"></p>
       </div>
       
       <div class="col-sm-3 col-md-3 col-xs-3">
         <h3>RECENTLY TRADED WITH:</h3>
-        <p style="font-size:10px; color:#03225C;"> "Cindy, Chelsea, Brady" </p>
-        <img src="images/icons/facebook.png">
-        <img src="images/icons/twitter.png">
-        <img src="images/icons/google.png">
-        <img src="images/icons/youtube.png">
-        <img src="images/icons/linkedin.png">
-        <img src="images/icons/flickr.png">
+        <img src="images/icons/facebook.png" height="44" width="44">
+        <img src="images/icons/twitter.png" height="44" width="44">
+        <img src="images/icons/google.png" height="44" width="44">
+        <img src="images/icons/youtube.png" height="44" width="44">
+        <img src="images/icons/linkedin.png" height="44" width="44">
       </div>
 
     </div>
@@ -111,23 +144,7 @@
   </div>
 </div>
 
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-  </div>
+
 </div>
 
 </body>
