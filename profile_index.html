@@ -16,15 +16,15 @@
   </style>
   <!-- Custom styles for this template -->
   <link href="carousel.css" rel="stylesheet">
-</head>
 
+</head>
 <body>
 
 
 <div class="navbar-wrapper">
   <div class="container">
 
-    <nav class="navbar navbar-inverse navbar-static-top" style="border: none">
+    <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,36 +33,36 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img src="../../wetradelogo_default.png" height="100" width="150">
+          <img src="wetradelogo_default.png" height="100" width="150">
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav" style="margin-top: 25px">
-            <li><a href="#" STYLE="color: #FFFBF0">How it works</a></li>
-            <li><a href="#about" STYLE="color: #FFFBF0">Signup</a></li>
-            <li><a href="#contact" STYLE="color: #FFFBF0">Login</a></li>
+          <ul class="nav navbar-nav">
+            <li ><a href="#about" STYLE="color: #000000">How It Works </a>
+            <li class=""><a href="./" STYLE="color: #000000">Signup<span class="sr-only">(current)</span></a></li>
+            <li><a href="../navbar-fixed-top/" STYLE="color: #000000">Login</a></li>
 
           </ul>
 
-          <ul class="nav navbar-nav navbar-right" style="margin-top: 25px">
+
+
+          <ul class="nav navbar-nav navbar-right">
 
             <li>
               <form class="form-signin">
-                <input type="thingIneed" STYLE="color: #FFFFFF"  id="thingIneed" class="form-control"  value="ladder" required autofocus>
+                <input type="thingIneed" STYLE="color: #FFFFFF"  id="thingIneed" class="form-control"  required autofocus>
 
               </form>
             </li>
-            <li><a href="borrower/results/index.html" STYLE="color: #FFFBF0">Search</a></li>
+            <li><a href="borrower/results/index.html" STYLE="color: #000000">Search</a></li>
 
           </ul>
 
         </div>
+      </div>
     </nav>
 
   </div>
 </div>
-<div class="container">
-
-  </form>
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <h2>Jose WeTrader</h2>
@@ -104,6 +104,33 @@
 
 <div class="container">
   <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/icons/house.jpg" alt="Chania" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="images/icons/skateboard.jpg" alt="Chania" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="images/icons/bicycle.jpg" alt="Flower" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="images/icons/airplane.jpg" alt="Flower" width="460" height="345">
+      </div>
+    </div>
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
