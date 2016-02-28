@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>We Trade</title>
+    <title>WeTrade</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -20,30 +20,28 @@
 <!-- NAVBARs
 ================================================== -->
   <body>
-            <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
-              </div>
-              <div class="modal-body text-center">
-                <a class="btn btn-primary" href="borrower/results/index.html" role="button">
-                Sign in with Facebook
-                </a>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
         </div>
 
-    <div class="navbar-wrapper">
-      <div class="container">
+        <div class="modal-body text-center">
+          <a class="btn btn-primary" href="borrower/results/index.html" role="button">
+            Sign in with Facebook
+          </a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <nav class="navbar navbar-inverse navbar-static-top" style="border: none">
+        <nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -55,36 +53,53 @@
               <img src="wetradelogo_default.png" height="100" width="150">
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav" style="margin-top: 25px">
-                <li ><a href="#about" STYLE="color: #FFFBF0">How it works</a>
-                <li class=""><a href="./" STYLE="color: #FFFBF0">Signup<span class="sr-only">(current)</span></a></li>
-                 <li><a  href="#" data-toggle="modal" STYLE="color: #FFFBF0" data-target="#myModal">Login</a></li>                
-              </ul>
+              <ul class="nav navbar-nav">
+                <li ><a href="#about" STYLE="color: #000000">How It Works </a>
+                <li class=""><a href="./" STYLE="color: #000000">Signup<span class="sr-only">(current)</span></a></li>
+                <li><a href="../navbar-fixed-top/" STYLE="color: #000000">Login</a></li>
 
-
-
-              <ul class="nav navbar-nav navbar-right" style="margin-top: 25px">
-
-                <li>
-                  <form class="form-signin">
-                    <input type="thingIneed" STYLE="color: #FFFFFF"  id="thingIneed" class="form-control"  required autofocus>
-
-                  </form>
-                </li>
-                <li><a href="borrower/results/index.html" STYLE="color: #FFFBF0">Search</a></li>
-                
-              </ul>
-
-            </div>
+      <nav class="navbar navbar-inverse navbar-static-top" style="border: none">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <img src="wetradelogo_default.png" height="100" width="150">
           </div>
-        </nav>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" style="margin-top: 25px">
+              <li ><a href="#about" STYLE="color: #FFFBF0">How it works</a>
+              <li class=""><a href="./" STYLE="color: #FFFBF0">Signup<span class="sr-only">(current)</span></a></li>
+              <li><a  href="#" data-toggle="modal" STYLE="color: #FFFBF0" data-target="#myModal">Login</a></li>
+            </ul>
 
-      </div>
+
+
+            <ul class="nav navbar-nav navbar-right" style="margin-top: 25px">
+
+              <li>
+                <form class="form-signin">
+                  <input type="thingIneed" STYLE="color: #FFFFFF"  id="thingIneed" class="form-control"  required autofocus>
+
+                </form>
+              </li>
+              <li><a href="borrower/results/index.html" STYLE="color: #FFFBF0">Search</a></li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
     </div>
+  </div>
 
 
-    <!-- Carousel
-    ================================================== -->
+  <!-- Carousel
+  ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
