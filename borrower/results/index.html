@@ -13,7 +13,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-
+    
+    <link href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css" rel="stylesheet">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
@@ -73,56 +74,67 @@
 
     </div>
   </div>
+ <div class="container">
+   <h2 class="form-signin-heading">SEARCH RESULTS</h2>
 
+      </form>
 
   <!--FORM
       ================================================== -->
-
-  <div class="container">
-
-      <form class="form-signin">
-<<<<<<< HEAD
-<div class="input-group">
-                <div class="input-group-btn search-panel">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    	<span id="search_concept">Filter by</span> <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="Location">Location</a></li>
-                      <li><a href="Rating">Rating</a></li>
-                      <li><a href="Availability">Availability</a></li>
-                      <li><a href="Number of Times Used">NumberTimesUsed</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#all">All</a></li>
-                    </ul>
-                </div>
-                <input type="hidden" name="search_param" value="all" id="search_param">         
-                <input type="text" class="form-control" name="x" id="TEXTBOX_ID"  placeholder="Search term...">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type=:"button"><span class="glyphicon glyphicon-search"></span></button>
-                </span>
-            </div>
-
-</script>
+&nbsp
+&nbsp
+<table border="0" cellpadding="5" cellspacing="5">
+<tbody><tr>
+            <td>Minimum age:</td>
+            <td><input id="min" name="min" type="text"></td>
+        </tr>
+        <tr>
+            <td>Maximum age:</td>
+            <td><input id="max" name="max" type="text"></td>
+        </tr>
+</tbody><table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Condition</th>
+                <th>Location</th>
+                <th>Rating</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MotorCycle</td>
+                <td>New</td>
+                <td>Oakland</td>
+                <td>5</td>
+                <td>Immediately</td>
+            </tr>
+            <tr>
+                <td>Ladder</td>
+                <td>Used</td>
+                <td>Oakland</td>
+                <td>5</td>
+                <td>Immediately</td>
+            </tr>
+            <tr>
+                <td>Mac Book Air</td>
+                <td>New</td>
+                <td>Oakland</td>
+                <td>5</td>
+                <td>3 Days</td>
+            </tr>
+            <tr>
+                <td>Power Saw</td>
+                <td>New</td>
+                <td>San Francisco</td>
+                <td>5</td>
+                <td>12 Days</td>
+            </tr>
+ </tbody>
+    </table>
 =======
 
-        <h2 class="form-signin-heading">I NEED SOMETHING</h2>
-        <label for="Needsomething" class="sr-only">The thing that I need</label>
-
-        <input type="thingIneed" id="thingIneed" class="form-control" placeholder="The thing that I need" required autofocus>
-        <label for="thingIneed" class="sr-only"></label>
-
-        <input type="thingihave" id="thingihave" class="form-control" placeholder="The thing that I have" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Get my location automatically
-          </label>
-        </div>
-
-        <input type="zipcode" id="zipcode" class="form-control" placeholder="My zip code" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Search</button>
->>>>>>> origin/develop
-      </form>
       <section>
         <h2>Map</h2>
         <ul class="input-list style-2 clearfix align="center"">
@@ -161,6 +173,7 @@
   </script>
 
       </section>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Go Back</button>
 
 
     </div> <!-- /container -->
@@ -171,15 +184,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>   
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>	
     <script src="filter.js"></script>
+    <script src="table.js"></script>
   </body>
 =======
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   <footer class = "footer">
-    <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p>&copy; 2016 WeTrade Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer>
 
   </body> 
->>>>>>> origin/develop
 </html>
