@@ -109,7 +109,15 @@ body {
     padding-right: 0;
     padding-left: 0;
   }
-
+  .form-signin input[type="thingIneed"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: slategray;
+    padding-top: 10px;
+    float: right;
+  }
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
