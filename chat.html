@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must****** come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>We Trade - Chat</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <style>
+          .chat
+      {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      .chat li
+      {
+          margin-bottom: 10px;
+          padding-bottom: 5px;
+          border-bottom: 1px dotted #B3A9A9;
+      }
+
+      .chat li.left .chat-body
+      {
+          margin-left: 60px;
+      }
+
+      .chat li.right .chat-body
+      {
+          margin-right: 60px;
+      }
+
+
+      .chat li .chat-body p
+      {
+          margin: 0;
+          color: #777777;
+      }
+
+      .panel .slidedown .glyphicon, .chat .glyphicon
+      {
+          margin-right: 5px;
+      }
+
+      .panel-body
+      {
+          overflow-y: scroll;
+          height: 250px;
+      }
+
+      ::-webkit-scrollbar-track
+      {
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+          background-color: #F5F5F5;
+      }
+
+      ::-webkit-scrollbar
+      {
+          width: 12px;
+          background-color: #F5F5F5;
+      }
+
+      ::-webkit-scrollbar-thumb
+      {
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+          background-color: #555;
+      }
+
+    </style>
+  </head>
+<!-- NAVBARs
+================================================== -->
+  <body>
+
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top" style="border: none">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <img src="wetradelogo_default.png" height="100" width="150">
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav" style="margin-top: 25px">
+                <li ><a href="#about" STYLE="color: #FFFBF0">How it works</a>
+                <li class=""><a href="./" STYLE="color: #FFFBF0">Signup<span class="sr-only">(current)</span></a></li>
+                 <li><a  href="#" data-toggle="modal" STYLE="color: #FFFBF0" data-target="#myModal">Login</a></li>                
+              </ul>
+
+
+
+              <ul class="nav navbar-nav navbar-right" style="margin-top: 25px">
+
+                <li>
+                  <form class="form-signin">
+                    <input type="thingIneed" STYLE="color: #FFFFFF"  id="thingIneed" class="form-control"  required autofocus>
+
+                  </form>
+                </li>
+                <li><a href="borrower/results/index.html" STYLE="color: #FFFBF0">Search</a></li>
+                
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+<br/><br/><br/><br/><br/><br/><br/>
+ <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-comment"></span> Chat
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </button>
+                        <ul class="dropdown-menu slidedown">
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-refresh">
+                            </span>Refresh</a></li>
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-ok-sign">
+                            </span>Available</a></li>
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-remove">
+                            </span>Busy</a></li>
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-time"></span>
+                                Away</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-off"></span>
+                                Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <ul class="chat">
+                        <li id="first" class="left clearfix" style="display: none"><span class="chat-img pull-left">
+                            <img src="http://placehold.it/50/55C1E7/fff&text=J" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">Jose R.</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span><span class="ago">10 seconds ago</span></small>
+                                </div>
+                                <p class="text">
+                                    Hey Alyssa! I'd love to lend my ladder to you. Can you meet in Jack London Square at 4PM today?
+                                </p>
+                            </div>
+                        </li>
+
+                        <li id="second" class="right clearfix" style="display: none"><span class="chat-img pull-right">
+                            <img src="http://placehold.it/50/FA6F57/fff&text=A" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span><span class="ago">15 mins ago</span></small>
+                                    <strong class="pull-right primary-font">Alyssa R.</strong>
+                                </div>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </li>                        
+
+
+                    </ul>
+                </div>
+
+                <div class="panel-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                        <span class="input-group-btn">
+                            <button class="btn btn-warning btn-sm" id="btn-chat">Send</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 WeTrade, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="holder.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var state = 0;
+
+        setTimeout(function(){ 
+
+           var x = $( "#first" ).clone();
+            x.find(".ago").text('10 seconds ago');
+            x.find(".text").text("Hey Alyssa! I'd love to lend my ladder to you. Can you meet in Jack London Square at 4PM today?");
+            x.show();
+            x.appendTo(".chat");
+            x.effect("highlight", {}, 1000);
+
+      }, 1500);
+
+
+        $("#btn-chat").click(function() {
+
+          if (state == 0) {
+            var x = $( "#second" ).clone();
+            x.find(".ago").text('now');
+            x.find(".text").text($("#btn-input").val());            
+            x.show();
+            x.appendTo(".chat");
+                        x.effect("highlight", {}, 1000);
+
+            state = 1;
+
+            setTimeout(function(){ 
+
+               var x = $( "#first" ).clone();
+                x.find(".ago").text('now');
+                x.find(".text").text("Awesome! See you there Jose. Here's my number: 555-521-5827");
+                x.show();
+                x.appendTo(".chat");
+                x.effect("highlight", {}, 1000);
+
+          }, 3000);
+
+          }
+
+
+
+
+
+        });
+
+
+    });
+</script>
+  </body>
+</html>
