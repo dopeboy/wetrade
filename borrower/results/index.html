@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Thhe above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
@@ -62,27 +62,31 @@
   <div class="navbar-wrapper">
       <div class="container">
 
-            <ul class="nav navbar-nav" style="margin-top: 25px">
-              <li><a href="#" STYLE="color: #FFFBF0">How it works</a></li>
-              <li><a href="#about" STYLE="color: #FFFBF0">Signup</a></li>
-              <li><a href="#contact" STYLE="color: #FFFBF0">Login</a></li>
+          <nav class="navbar navbar-inverse navbar-static-top" style="border: none">
+              <div class="container">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <img src="../../wetradelogo_default.png" height="100" width="150">
+                  </div>
+                  <div id="navbar" class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav" style="margin-top: 25px">
+                          <li ><a href="#about" STYLE="color: #FFFBF0">How it works</a>
+                          <li class=""><a href="./" STYLE="color: #FFFBF0">Signup<span class="sr-only">(current)</span></a></li>
+                          <li><a  href="#" data-toggle="modal" STYLE="color: #FFFBF0" data-target="#myModal">Login</a></li>
+                      </ul>
 
 
-              <ul class="nav navbar-nav navbar-right" style="margin-top: 25px">
 
                       <ul class="nav navbar-nav navbar-right" style="margin-top: 25px">
-                <li>
-                  <form class="form-signin">
-                    <input type="thingIneed" STYLE="color: #FFFFFF"  id="thingIneed" class="form-control"  value="ladder" required autofocus>
 
                           <li>
                               <form class="form-signin">
                                   <input type="thingIneed" STYLE="color: #FFFFFF"  id="thingIneed" class="form-control"  required autofocus>
-                  </form>
-                </li>
-                <li><a href="borrower/results/index.html" STYLE="color: #FFFBF0">Search</a></li>
-                
-              </ul>
 
                               </form>
                           </li>
@@ -145,28 +149,28 @@
         </thead>
         <tbody>
             <tr>
-                <td><img src="images/yellow-ladder_small.gif" alt="a yellow ladder"></td>
+                <td>Ladder <img src="images/yellow-ladder_small.gif" alt="a yellow ladder"></td>
                 <td>New</td>
                 <td>Oakland</td>
                 <td>5</td>
                 <td>Immediately</td>
             </tr>
             <tr>
-                <td><img src="images/extension-ladder_small.jpg" alt="an extensioan ladder"></td>
+                <td>Ladder <img src="images/extension-ladder_small.jpg" alt="an extensioan ladder"></td>
                 <td>Used</td>
                 <td>Oakland</td>
                 <td>5</td>
                 <td>Tomorrow</td>
             </tr>
             <tr>
-                <td><img src="images/werner-ladder_small.jpg" alt="a werner ladder"></td>
+                <td>Ladder <img src="images/werner-ladder_small.jpg" alt="a werner ladder"></td>
                 <td>New</td>
                 <td>Oakland</td>
                 <td>5</td>
                 <td>3 Days</td>
             </tr>
             <tr>
-                <td><img src="images/wood-ladder_small.jpg" alt="a wood ladder"></td>
+                <td>Ladder <img src="images/wood-ladder_small.jpg" alt="a wood ladder"></td>
                 <td>New</td>
                 <td>San Francisco</td>
                 <td>5</td>
@@ -228,7 +232,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>   
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>	
+    <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>  
     <script src="filter.js"></script>
     <script src="table.js"></script>
   </body>
