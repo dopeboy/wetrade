@@ -85,13 +85,18 @@
 &nbsp
 <table border="0" cellpadding="5" cellspacing="5">
 <tbody><tr>
-            <td>Minimum age:</td>
-            <td><input id="min" name="min" type="text"></td>
-        </tr>
-        <tr>
-            <td>Maximum age:</td>
-            <td><input id="max" name="max" type="text"></td>
-        </tr>
+       
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Rating</a></li>
+      <li><a href="#">Availability</a></li>
+      <li><a href="#">Condition</a></li>
+    </ul>
+  </div>
+&nbsp
+&nbsp
 </tbody><table id="example" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
@@ -104,7 +109,7 @@
         </thead>
         <tbody>
             <tr>
-                <td>MotorCycle</td>
+                <td>Ladder</td>
                 <td>New</td>
                 <td>Oakland</td>
                 <td>5</td>
@@ -118,14 +123,14 @@
                 <td>Immediately</td>
             </tr>
             <tr>
-                <td>Mac Book Air</td>
+                <td>Ladder</td>
                 <td>New</td>
                 <td>Oakland</td>
                 <td>5</td>
                 <td>3 Days</td>
             </tr>
             <tr>
-                <td>Power Saw</td>
+                <td>Ladder</td>
                 <td>New</td>
                 <td>San Francisco</td>
                 <td>5</td>
@@ -134,6 +139,7 @@
  </tbody>
     </table>
 
+
       <section>
         <h2>Map</h2>
         <ul class="input-list style-2 clearfix align="center"">
@@ -141,9 +147,12 @@
 
   <script type="text/javascript">
     var locations = [
-      ['Your House', 37.8044444, -122.2697222],
-      ['Car', 37.828575, -122.289618],
-      ['Saw', 37.725083, -122.233083]
+      ['Home', 37.8044444, -122.2697222],
+      ['Ladder', 37.780536, -122.279741],
+      ['Ladder', 37.804364, -122.271114],
+      ['Ladder', 37.752483, -122.198210],
+      ['Ladder', 37.872532, -122.260783],
+      ['Ladder', 37.804364, -122.271114]
     ];
 
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -178,6 +187,7 @@
     </div> <!-- /container -->
 
 
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>   
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
@@ -186,6 +196,7 @@
     <script src="filter.js"></script>
     <script src="table.js"></script>
   </body>
+
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   <footer class = "footer">
