@@ -42,5 +42,5 @@ https://wetrade.herokuapp.com
 
 ## Presentation deck
 
-[https://github.com/dopeboy/wetrade/blob/master/WeTrade_Pitch.pdf](Presentation)
+[Presentation](https://github.com/dopeboy/wetrade/blob/master/WeTrade_Pitch.pdf)
 
