@@ -2,7 +2,7 @@
 
 ## Overview
 
-WeTrade is an online marketplace to lend and borrow home goods. It was built at the [2016 My Brother's Keeper hackathon](https://www.eventbrite.com/e/my-brothers-keeper-hackathon-mbkhack-oakland-2016-tickets-19228327445) in Oakland put on by [Qeyno labs](http://www.qeyno.com/). 
+WeTrade is an online marketplace to lend and borrow home goods. It was built at the [2016 My Brother's Keeper hackathon](https://www.eventbrite.com/e/my-brothers-keeper-hackathon-mbkhack-oakland-2016-tickets-19228327445) in Oakland put on by [Qeyno labs](http://www.qeyno.com/). It won first place.
 
 ## Team
 
